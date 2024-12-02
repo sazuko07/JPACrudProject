@@ -20,7 +20,7 @@ public class MetalBands {
 	@Column(name="Name_Of_Band")
 	private String nameOfBand;
 	
-	@Column(name="Year_Founded")
+	@Column(name="Year_Founded") 
 	private Year yearFounded;
 	
 	@Column(name="Popular_Song")
