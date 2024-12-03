@@ -12,6 +12,7 @@ import jakarta.transaction.Transactional;
 public class DatabaseAccessorObject implements DatabaseAccessor {
 	private static final String URL = "jdbc:mysql://localhost:3306/bandsdb";
 	MetalBand newBand = new MetalBand();
+	MetalBand findBand = new MetalBand();
 	public DatabaseAccessorObject() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -36,8 +37,8 @@ public class DatabaseAccessorObject implements DatabaseAccessor {
 	}
 
 	@Override
-	public MetalBands findBandById(int Id) throws SQLException {
+	public MetalBand findBandById(int Id) throws SQLException {
 		
-		return null;
+		return findBand;
 	}
 }

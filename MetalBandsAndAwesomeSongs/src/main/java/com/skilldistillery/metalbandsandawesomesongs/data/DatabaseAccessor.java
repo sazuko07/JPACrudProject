@@ -4,7 +4,7 @@ import java.time.Year;
 
 import com.skilldistillery.metalbandsandawesomesongs.entities.*;
 
-public interface DatabaseAccessor {
+public interface DatabaseAccessor extends {
 	public MetalBand findBandById(int Id) throws SQLException;
 	public MetalBand enterNewBand(int id, String nameOfBand, Year yearFounded, String popularSong);
 }
