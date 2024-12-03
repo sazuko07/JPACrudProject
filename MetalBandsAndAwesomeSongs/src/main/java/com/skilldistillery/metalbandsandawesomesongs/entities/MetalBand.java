@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table
-public class MetalBands {
+public class MetalBand {
 	@Id 
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int id;
@@ -32,8 +32,17 @@ public class MetalBands {
 				+ popularSong + "]";
 	}
 
-	public MetalBands() {
+	public MetalBand() {
 		super();
+	}
+	
+
+	public MetalBand(int id, String nameOfBand, Year yearFounded, String popularSong) {
+		super();
+		this.id = id;
+		this.nameOfBand = nameOfBand;
+		this.yearFounded = yearFounded;
+		this.popularSong = popularSong;
 	}
 
 	@Override
@@ -49,7 +58,7 @@ public class MetalBands {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		MetalBands other = (MetalBands) obj;
+		MetalBand other = (MetalBand) obj;
 		return id == other.id && Objects.equals(nameOfBand, other.nameOfBand)
 				&& Objects.equals(popularSong, other.popularSong) && Objects.equals(yearFounded, other.yearFounded);
 	}

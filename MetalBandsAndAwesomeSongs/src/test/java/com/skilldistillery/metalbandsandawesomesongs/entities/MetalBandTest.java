@@ -13,11 +13,11 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MetalBandsTest {
+public class MetalBandTest {
 
 	private static EntityManagerFactory emf;
 	private EntityManager em;
-	private MetalBands MetalBands;
+	private MetalBand MetalBand;
 	
 	
 	@BeforeAll
@@ -33,20 +33,20 @@ public class MetalBandsTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		MetalBands = em.find(MetalBands.class, 1);
+		MetalBand = em.find(MetalBand.class, 1);
 	}
 	
 	@AfterEach
 	void tearDown() throws Exception {
 		em.close();
-		MetalBands = null;
+		MetalBand = null;
 		
 	}
 
 	@Test
 	void test_MetalBands_mappings() {
-		assertNotNull(MetalBands);
-		assertEquals(1999, MetalBands.getYearFounded());
+		assertNotNull(MetalBand);
+		assertEquals(1999, MetalBand.getYearFounded());
 		
 	}
 
