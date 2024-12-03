@@ -6,6 +6,6 @@ import java.util.List;
 import com.skilldistillery.metalbandsandawesomesongs.entities.*;
 
 public interface DatabaseAccessor  {
-	public List<MetalBand> findBandById(int Id) throws SQLException;
+	public MetalBand findBandById(int Id) throws SQLException;
 	public MetalBand enterNewBand(int id, String nameOfBand, Year yearFounded, String popularSong);
 }
