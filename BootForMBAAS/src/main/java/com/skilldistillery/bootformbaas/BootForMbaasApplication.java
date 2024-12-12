@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
-@EntityScan("com.skilldistillery.bootformbaas")
+@EntityScan("com.skilldistillery.metalbandsandawesomesongs")
 public class BootForMbaasApplication {
 
 	public static void main(String[] args) {

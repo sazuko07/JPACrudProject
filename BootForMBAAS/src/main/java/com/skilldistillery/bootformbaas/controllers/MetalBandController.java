@@ -22,7 +22,7 @@ public class MetalBandController {
 	   public String index(Model model) {
 		List<MetalBand> metalBand = dao.allMetalBands();
 		model.addAttribute("metalBand", metalBand);
-	    return "home"; 
+	    return "index"; 
 	   }
 	@GetMapping("findBandById.do")
 	public ModelAndView getMetalBandById(@RequestParam("id") int id) {
@@ -35,7 +35,7 @@ public class MetalBandController {
 			e.printStackTrace();
 		}
 		mv.addObject("metalBand", metalBand);
-		mv.setViewName("show");
+		mv.setViewName("Show");
 		return mv;
 	}
 	@GetMapping("deleteMetalBand.do")
