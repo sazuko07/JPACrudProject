@@ -43,3 +43,16 @@ GRANT ALL ON * TO 'student';
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- Data for table `MetalBands`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `MetalDB`;
+INSERT INTO `MetalBands` (`id`, `Name_Of_Band`, `Year_Founded`, `Popular_Song`) VALUES (1, 'Sevendust', 1994, 'black');
+INSERT INTO `MetalBands` (`id`, `Name_Of_Band`, `Year_Founded`, `Popular_Song`) VALUES (2, 'Disturbed', 1994, 'down with the sickness');
+INSERT INTO `MetalBands` (`id`, `Name_Of_Band`, `Year_Founded`, `Popular_Song`) VALUES (3, 'Trivium', 1998, 'shogun');
+INSERT INTO `MetalBands` (`id`, `Name_Of_Band`, `Year_Founded`, `Popular_Song`) VALUES (4, 'Bad Wolves', 2017, 'zombie');
+
+COMMIT;
+

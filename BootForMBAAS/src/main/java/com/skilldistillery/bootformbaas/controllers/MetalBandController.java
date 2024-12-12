@@ -38,6 +38,23 @@ public class MetalBandController {
 		mv.setViewName("Show");
 		return mv;
 	}
+	@GetMapping("addNewBand.do")
+	public ModelAndView addNewBand(@RequestParam("id") int id, @RequestParam("Name_Of_Band") String nameOfBand,
+																@RequestParam("Year_Founded") int yearFounded, @RequestParam("Popular_Song") String popularSong) {
+	ModelAndView mv = new ModelAndView();
+	MetalBand metalBand = new MetalBand();
+	try {
+		metalBand = dao.addNewBand(metalBand);
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+	}
+	mv.addObject("metalBand", metalBand);
+	mv.setViewName("addband");
+	return mv;
+	}
+	
+	
 	@GetMapping("deleteMetalBand.do")
 	public ModelAndView deleteMetalBand(@RequestParam("id") int id) {
 		ModelAndView mv = new ModelAndView();

@@ -5,15 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Show Metal Band</title>
+<title>Add Metal Band</title>
 </head>
 <body>
-<form>
-
+<p>You have successfully added a new band to the database!</p>
 ${metalBand.id }<br> 
 ${metalBand.nameOfBand }<br>
+&{metalBand.yearFounded }<br>
 ${metalBand.popularSong }
 
-</form>
 </body>
 </html>
