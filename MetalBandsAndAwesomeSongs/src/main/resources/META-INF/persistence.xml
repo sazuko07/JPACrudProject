@@ -3,9 +3,12 @@
 	<persistence-unit name="MetalBands">
 	
 	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	<class>com.skilldistillery.metalbandsandawesomesongs.entities.MetalBand</class>
+	
+	
 
     <properties>
-      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/MetalDB" />
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/metaldb" />
       <property name="jakarta.persistence.jdbc.user" value="student"/>
       <property name="jakarta.persistence.jdbc.password" value="student" />
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
@@ -21,5 +24,12 @@
       <property name="hibernate.c3p0.max_statements" value="0" />
       <property name="hibernate.c3p0.timeout" value="60" />
     </properties>
+   
+	
+	
+	
+	
+	
+	
 	</persistence-unit>
 </persistence>

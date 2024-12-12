@@ -7,5 +7,7 @@ import com.skilldistillery.metalbandsandawesomesongs.entities.*;
 
 public interface DatabaseAccessor  {
 	public MetalBand findBandById(int Id) throws SQLException;
-	public MetalBand enterNewBand(int id, String nameOfBand, Year yearFounded, String popularSong);
+	public MetalBand addNewBand(MetalBand metalBand);
+	public boolean deleteMetalBand(int id);
+	public MetalBand changeBandInfo(MetalBand metalBand);
 }

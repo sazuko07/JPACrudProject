@@ -17,7 +17,7 @@ public class MetalBandTest {
 
 	private static EntityManagerFactory emf;
 	private EntityManager em;
-	private MetalBand MetalBand;
+	private MetalBand metalBand;
 	
 	
 	@BeforeAll
@@ -33,20 +33,20 @@ public class MetalBandTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		MetalBand = em.find(MetalBand.class, 1);
+		metalBand = em.find(MetalBand.class, 1);
 	}
 	
 	@AfterEach
 	void tearDown() throws Exception {
 		em.close();
-		MetalBand = null;
+		metalBand = null;
 		
 	}
 
 	@Test
 	void test_MetalBands_mappings() {
-		assertNotNull(MetalBand);
-		assertEquals(1999, MetalBand.getYearFounded());
+		assertNotNull(metalBand);
+		assertEquals(1999, metalBand.getYearFounded());
 		
 	}
 

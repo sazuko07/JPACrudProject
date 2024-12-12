@@ -11,7 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name="metalbands")
 public class MetalBand {
 	@Id 
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class MetalBand {
 	private String nameOfBand;
 	
 	@Column(name="Year_Founded") 
-	private Year yearFounded;
+	private int yearFounded;
 	
 	@Column(name="Popular_Song")
 	private String popularSong;
@@ -37,7 +37,7 @@ public class MetalBand {
 	}
 	
 
-	public MetalBand(int id, String nameOfBand, Year yearFounded, String popularSong) {
+	public MetalBand(int id, String nameOfBand, int yearFounded, String popularSong) {
 		super();
 		this.id = id;
 		this.nameOfBand = nameOfBand;
@@ -79,11 +79,11 @@ public class MetalBand {
 		this.nameOfBand = nameOfBand;
 	}
 
-	public Year getYearFounded() {
+	public int getYearFounded() {
 		return yearFounded;
 	}
 
-	public void setYearFounded(Year yearFounded) {
+	public void setYearFounded(int yearFounded) {
 		this.yearFounded = yearFounded;
 	}
 
