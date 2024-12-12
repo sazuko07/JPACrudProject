@@ -33,6 +33,10 @@
 	<input type="text" name="delete band from database" placeholder="delete a selected band from the database">
 	<input type="submit" name="confirm delete" value="confirm">
 	</form>
+	<form>
+	<form action=""
+	
+	</form>
 	
 </body>
 </html>

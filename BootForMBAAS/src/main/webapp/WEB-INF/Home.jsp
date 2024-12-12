@@ -8,6 +8,6 @@
 <title>Metal Bands Home</title>
 </head>
 <body>
-<a href="getmetalband.do">Get Metal Band</a>
+<a href="home.do">Metal Bands Home</a>
 </body>
 </html>
