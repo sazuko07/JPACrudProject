@@ -10,5 +10,6 @@ public interface MetalDAO {
 	MetalBand addNewBand(MetalBand metalBand);
 	boolean deleteMetalBand(int id);
 	List<MetalBand> allMetalBands();
+
 	
 }

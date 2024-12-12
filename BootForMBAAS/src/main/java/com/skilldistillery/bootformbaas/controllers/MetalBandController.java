@@ -50,4 +50,20 @@ public class MetalBandController {
 		}
 		return mv;
 	}
+	@GetMapping("updateBandInfo.do")
+	public ModelAndView updateBandInfo(@RequestParam("id") int id, @RequestParam("Name_Of_Band") String nameOfBand,
+										@RequestParam("Year_Founded") int yearFounded, @RequestParam("Popular_Song") String popularSong) {
+											
+	
+	ModelAndView mv = new ModelAndView();
+	MetalBand metalBand = new MetalBand();
+	try {
+		metalBand = dao.updateBandInfo(metalBand, id);
+	
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+	}
+	return mv;
+}
 }
