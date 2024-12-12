@@ -7,7 +7,7 @@
 <title>JPACrudProject</title>
 </head>
 <body>
-
+	<p>You can find bands in the database by their ID</p><br>
 	<form action="findBandById.do">
 		<input type="text" name="id" placeholder="input band id here">
 		<input type="submit"  value="Find Band by ID">
