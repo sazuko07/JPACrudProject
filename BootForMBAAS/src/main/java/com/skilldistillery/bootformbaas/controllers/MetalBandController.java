@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.skilldistillery.metalbandsandawesomesongs.entities.*;
 
-//@Controller
+@Controller
 public class MetalBandController {
 	private final MetalDAO dao;
 	public MetalBandController(MetalDAO dao) {

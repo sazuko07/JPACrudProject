@@ -53,7 +53,7 @@ public class MetalDAOImpl implements MetalDAO {
 
 		MetalBand metalBand = em.find(MetalBand.class, id);
 
-		em.close();
+		
 		return metalBand;
 	}
 

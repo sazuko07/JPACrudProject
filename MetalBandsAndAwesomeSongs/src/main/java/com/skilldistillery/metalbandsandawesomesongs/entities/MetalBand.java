@@ -11,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
+
 @Table(name="metalbands")
 public class MetalBand {
 	@Id 
