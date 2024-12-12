@@ -68,7 +68,7 @@ public class MetalBandController {
 		return mv;
 	}
 	@GetMapping("updateBandInfo.do")
-	public ModelAndView updateBandInfo(@RequestParam("id") int id, @RequestParam("Name_Of_Band") String nameOfBand,
+	public ModelAndView updateBandInfo(@RequestParam("Name_Of_Band") String nameOfBand,
 										@RequestParam("Year_Founded") int yearFounded, @RequestParam("Popular_Song") String popularSong) {
 											
 	
