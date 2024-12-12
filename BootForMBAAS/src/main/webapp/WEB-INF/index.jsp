@@ -32,7 +32,7 @@
 	<form>
 	<p>You can also delete a band from the current database:</p><br>
 	<form action="deleteBand.do">
-	<input type="text" name="delete band from database" placeholder="delete a selected band from the database">
+	<input type="text" name="delete band from database" placeholder="input band id to delete">
 	<input type="submit" name="confirm delete" value="confirm">
 	</form>
 
