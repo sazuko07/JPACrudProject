@@ -13,6 +13,7 @@
 		<input type="submit"  value="Find Band by ID">
 		
 	</form>
+	<p>You can list all current metal bands in the database</p><br>
 	<form action="addMetalBand.do" method="post">
 		<input type="text" name="year founded" placeholder="input the year the band was founded">
 		<input type="text" name="name of band" placeholder="input name of band here">
