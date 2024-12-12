@@ -9,11 +9,11 @@
 </head>
 <body>
 <form>
-<c:forEach items="${metalBands }" var="metalBands">
-${metalBands.id } 
-${metalBands.nameOfBand }
-${metalBands.popularSong }
-</c:forEach>
+
+${metalBand.id } 
+${metalBand.nameOfBand }
+${metalBand.popularSong }
+
 </form>
 </body>
 </html>
