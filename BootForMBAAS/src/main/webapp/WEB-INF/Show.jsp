@@ -8,6 +8,12 @@
 <title>Show Metal Band</title>
 </head>
 <body>
-
+<form>
+<c:forEach items="${metalBands }" var="metalBands">
+${metalBands.id } 
+${metalBands.nameOfBand }
+${metalBands.popularSong }
+</c:forEach>
+</form>
 </body>
 </html>
