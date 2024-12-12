@@ -15,7 +15,7 @@
 	</form>
 	<p>You can add a new band to the list bands in the database</p><br>
 	<form action="addMetalBand.do" method="post">
-		<input type="text" name="id" placeholder="input the band id (has to be 4 or greater)">
+		<input type="text" name="id" placeholder="input the band id (>4)">
 		<input type="text" name="year founded" placeholder="input the year the band was founded">
 		<input type="text" name="name of band" placeholder="input name of band here">
 		<input type="text" name="popular song" placeholder="input popular song here">
